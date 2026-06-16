@@ -3,77 +3,311 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Tu nombre aquí] · Portfolio</title>
+  <title>Marta Fraile Jara · Data Scientist & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.16.0/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar">
-      <a href="#inicio" class="logo">[Tu nombre]</a>
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">MF</span>
+        Marta Fraile Jara
+      </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inicio" data-nav-link>Inicio</a></li>
+        <li><a href="#sobre-mi" data-nav-link>Sobre mí</a></li>
+        <li><a href="#que-hago" data-nav-link>Qué hago</a></li>
+        <li><a href="#experiencia" data-nav-link>Experiencia</a></li>
+        <li><a href="#formacion" data-nav-link>Formación</a></li>
+        <li><a href="#contacto" class="nav-cta" data-nav-link>Contáctame <span class="nav-cta-dot"></span></a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="inicio" class="hero">
-      <h1>Hola, soy <span class="highlight">[Tu nombre aquí]</span></h1>
-      <p class="subtitle">[Breve descripción de lo que haces, ej. "Desarrolladora web especializada en..."]</p>
-      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <p class="eyebrow">// PORTFOLIO</p>
+      <h1>Hola, soy <span class="highlight">Marta Fraile Jara</span></h1>
+      <p class="role-tag">Data Scientist & AI Engineer</p>
+      <p class="subtitle">Científica de Datos e Ingeniera en Inteligencia Artificial, especializada en machine learning, Big Data y soluciones cloud con Azure.</p>
+      <div class="hero-actions">
+        <a href="#experiencia" class="btn-primary">Ver experiencia</a>
+        <a href="#contacto" class="btn-secondary">Contáctame</a>
+      </div>
     </section>
 
     <section id="sobre-mi" class="section">
-      <h2>Sobre mí</h2>
-      <p>[Aquí va un párrafo contando quién eres, tu experiencia y lo que te apasiona.]</p>
-      <ul class="skills">
-        <li>[Skill 1]</li>
-        <li>[Skill 2]</li>
-        <li>[Skill 3]</li>
-        <li>[Skill 4]</li>
-      </ul>
+      <p class="eyebrow"><span class="eyebrow-dot"></span>SOBRE MÍ</p>
+      <h2>Construyendo soluciones inteligentes con <span class="highlight">IA.</span></h2>
+      <div class="heading-rule"></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Trabajo con IA.<br>Pero no con esa IA "mágica" que te venden en posts llenos de emojis y frases recicladas.<br>La mía es la de verdad: prompting afinado, pipelines que no se caen cada dos días y modelos que hacen lo que tienen que hacer.</p>
+          <p>Vengo de un máster en Inteligencia Artificial y estoy en mi primer año en el sector.<br>Azure, Python, APIs, bases de datos y las herramientas con las que toca convivir cuando construyes cosas con IA.</p>
+          <p>Busco que las cosas funcionen bien y se entiendan fácil.<br>Soluciones claras, estables y sin añadidos innecesarios.</p>
+          <p>Sigo aprendiendo, ajustando y mejorando cada proyecto.<br>Porque al ritmo al que avanza esto… o te adaptas, o te quedas mirando.</p>
+
+          <p class="group-label">TECNOLOGÍAS</p>
+          <ul class="skills">
+            <li><a href="https://www.python.org/" target="_blank" rel="noopener"><i class="devicon-python-plain colored"></i>Python</a></li>
+            <li><a href="https://www.java.com/" target="_blank" rel="noopener"><i class="devicon-java-plain colored"></i>Java</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener"><i class="devicon-csharp-plain colored"></i>C#</a></li>
+            <li><a href="https://www.tensorflow.org/" target="_blank" rel="noopener"><i class="devicon-tensorflow-original colored"></i>TensorFlow</a></li>
+            <li><a href="https://pandas.pydata.org/" target="_blank" rel="noopener"><i class="devicon-pandas-original colored"></i>Pandas</a></li>
+            <li><a href="https://spark.apache.org/" target="_blank" rel="noopener"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>Spark</a></li>
+            <li><a href="https://www.mysql.com/" target="_blank" rel="noopener"><i class="devicon-mysql-plain colored"></i>MySQL</a></li>
+            <li><a href="https://www.mongodb.com/" target="_blank" rel="noopener"><i class="devicon-mongodb-plain colored"></i>MongoDB</a></li>
+            <li><a href="https://www.docker.com/" target="_blank" rel="noopener"><i class="devicon-docker-plain colored"></i>Docker</a></li>
+            <li><a href="https://git-scm.com/" target="_blank" rel="noopener"><i class="devicon-git-plain colored"></i>Git</a></li>
+            <li><a href="https://azure.microsoft.com/" target="_blank" rel="noopener"><i class="devicon-azure-plain colored"></i>Azure</a></li>
+            <li><a href="https://www.databricks.com/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/databricks/FF3621" alt="" class="tech-img">Databricks</a></li>
+            <li><a href="https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio" target="_blank" rel="noopener"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>Copilot Studio</a></li>
+          </ul>
+
+          <p class="group-label">IDIOMAS</p>
+          <ul class="langs">
+            <li>
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span class="lang-text"><span class="lang-name">Español</span><span class="lang-level">Nativo</span></span>
+            </li>
+            <li>
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span class="lang-text"><span class="lang-name">Inglés</span><span class="lang-level">B1 · Oxford</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="stats-card">
+          <p class="stats-card-label">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            EN CIFRAS
+          </p>
+          <div class="stat">
+            <span class="stat-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </span>
+            <span class="stat-text">
+              <span class="stat-number">+2</span>
+              <span class="stat-label">Años de experiencia</span>
+            </span>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+            </span>
+            <span class="stat-text">
+              <span class="stat-number">+3</span>
+              <span class="stat-label">Certificaciones Azure</span>
+            </span>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </span>
+            <span class="stat-text">
+              <span class="stat-number">+12</span>
+              <span class="stat-label">Tecnologías</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-marquee">
+        <ul class="tech-stack" id="tech-stack">
+          <li><a href="https://www.python.org/" target="_blank" rel="noopener" aria-label="Python"><i class="devicon-python-plain colored"></i></a></li>
+          <li><a href="https://www.java.com/" target="_blank" rel="noopener" aria-label="Java"><i class="devicon-java-plain colored"></i></a></li>
+          <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener" aria-label="C#"><i class="devicon-csharp-plain colored"></i></a></li>
+          <li><a href="https://www.tensorflow.org/" target="_blank" rel="noopener" aria-label="TensorFlow"><i class="devicon-tensorflow-original colored"></i></a></li>
+          <li><a href="https://pandas.pydata.org/" target="_blank" rel="noopener" aria-label="Pandas"><i class="devicon-pandas-original colored"></i></a></li>
+          <li><a href="https://www.mysql.com/" target="_blank" rel="noopener" aria-label="MySQL"><i class="devicon-mysql-plain colored"></i></a></li>
+          <li><a href="https://www.mongodb.com/" target="_blank" rel="noopener" aria-label="MongoDB"><i class="devicon-mongodb-plain colored"></i></a></li>
+          <li><a href="https://www.docker.com/" target="_blank" rel="noopener" aria-label="Docker"><i class="devicon-docker-plain colored"></i></a></li>
+          <li><a href="https://git-scm.com/" target="_blank" rel="noopener" aria-label="Git"><i class="devicon-git-plain colored"></i></a></li>
+          <li><a href="https://azure.microsoft.com/" target="_blank" rel="noopener" aria-label="Azure"><i class="devicon-azure-plain colored"></i></a></li>
+          <li><a href="https://www.databricks.com/" target="_blank" rel="noopener" aria-label="Databricks"><img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks" class="tech-img"></a></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="proyectos" class="section">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>[Nombre del proyecto 1]</h3>
-          <p>[Descripción breve del proyecto y tecnologías usadas.]</p>
-          <a href="#" target="_blank" rel="noopener">Ver en GitHub →</a>
+    <section id="que-hago" class="section">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>WHAT I DO</p>
+      <h2>Qué hago</h2>
+      <div class="heading-rule"></div>
+      <div class="services-grid">
+        <article class="service-card">
+          <button class="service-card-header" data-service-toggle aria-expanded="false">
+            <span class="service-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </span>
+            <span class="service-title">IA & Machine Learning</span>
+            <span class="service-summary">Desarrollo, entrenamiento y evaluación de modelos predictivos y redes neuronales.</span>
+            <span class="service-chevron">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="service-panel">
+            <div class="service-panel-inner">
+              <p>Desde el preprocesado de datos hasta el despliegue del modelo en producción, cuidando la robustez y la interpretabilidad de cada solución, tanto en IA tradicional como generativa, NLP y visión por computador.</p>
+              <ul class="service-tags">
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>NLP</li>
+                <li>Computer Vision</li>
+                <li>Scikit-learn</li>
+              </ul>
+            </div>
+          </div>
         </article>
-        <article class="project-card">
-          <h3>[Nombre del proyecto 2]</h3>
-          <p>[Descripción breve del proyecto y tecnologías usadas.]</p>
-          <a href="#" target="_blank" rel="noopener">Ver en GitHub →</a>
+        <article class="service-card">
+          <button class="service-card-header" data-service-toggle aria-expanded="false">
+            <span class="service-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 5V19A9 3 0 0 1 3 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+            </span>
+            <span class="service-title">Data Engineering & Big Data</span>
+            <span class="service-summary">Minería y análisis de grandes volúmenes de datos para apoyar la toma de decisiones.</span>
+            <span class="service-chevron">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="service-panel">
+            <div class="service-panel-inner">
+              <p>Diseño de pipelines de datos escalables y consultas eficientes sobre grandes volúmenes de información estructurada y no estructurada, con foco en rendimiento y calidad del dato.</p>
+              <ul class="service-tags">
+                <li>Spark</li>
+                <li>SQL</li>
+                <li>NoSQL</li>
+                <li>Pandas</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
         </article>
-        <article class="project-card">
-          <h3>[Nombre del proyecto 3]</h3>
-          <p>[Descripción breve del proyecto y tecnologías usadas.]</p>
-          <a href="#" target="_blank" rel="noopener">Ver en GitHub →</a>
+        <article class="service-card">
+          <button class="service-card-header" data-service-toggle aria-expanded="false">
+            <span class="service-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </span>
+            <span class="service-title">Cloud & Desarrollo</span>
+            <span class="service-summary">Despliegue de soluciones de IA en Azure y desarrollo de aplicaciones backend.</span>
+            <span class="service-chevron">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="service-panel">
+            <div class="service-panel-inner">
+              <p>Integración de servicios cloud con aplicaciones reales: APIs, bases de datos y automatización de procesos end-to-end, usando Azure Cognitive Services y Azure OpenAI.</p>
+              <ul class="service-tags">
+                <li>Azure</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>C#</li>
+                <li>APIs</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
+    <section id="experiencia" class="section">
+      <p class="eyebrow">EXPERIENCE</p>
+      <h2>Experiencia laboral</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Avanade</h3>
+            <span class="experience-dates">Sept 2025 – Actualidad</span>
+          </div>
+          <ul class="experience-roles">
+            <li>
+              <strong>Junior AI Engineer & Data Analyst</strong> · Jornada completa
+              <p>Implementación de soluciones de inteligencia artificial aplicadas a casos reales.</p>
+            </li>
+            <li>
+              <strong>AI & Data Analyst Intern</strong> · Prácticas del Máster en IA + Big Data
+              <p>Desarrollo y análisis de soluciones de IA utilizando Azure, Machine Learning, NLP, Computer Vision y analítica de datos.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>doValue</h3>
+            <span class="experience-dates">Mar 2024 – Sept 2024</span>
+          </div>
+          <ul class="experience-roles">
+            <li>
+              <strong>Técnico de Soporte y Desarrollo CRM</strong> · Jul 2024 – Ago 2024
+              <p>Mantenimiento y mejora del CRM interno; implementación de nuevas funcionalidades y resolución de incidencias de ticketing.</p>
+            </li>
+            <li>
+              <strong>Prácticas de Grado Superior · DAM</strong> · Mar 2024 – Jun 2024
+              <p>Desarrollo de aplicaciones con Windows Forms para gestión de onboardings y automatización de tareas mediante scripts.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section">
+      <p class="eyebrow">EDUCATION</p>
+      <h2>Formación y certificaciones</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>Grado en Ciencia de Datos Aplicada</h3>
+          <p class="edu-meta">Universitat Oberta de Catalunya · Feb 2026 – Actualidad</p>
+        </div>
+        <div class="edu-card">
+          <h3>Máster en Inteligencia Artificial + Big Data</h3>
+          <p class="edu-meta">Tajamar · 2024 – 2025</p>
+          <p>Formación en IA tradicional y generativa, redes neuronales con TensorFlow y Python, NLP, visión por computador, minería de datos y servicios cloud de Azure.</p>
+        </div>
+        <div class="edu-card">
+          <h3>Grado Superior en Desarrollo Multiplataforma</h3>
+          <p class="edu-meta">Colegio Santa María de los Apóstoles · 2022 – 2024</p>
+        </div>
+        <div class="edu-card">
+          <h3>Bachillerato</h3>
+          <p class="edu-meta">IES Arenas de San Pedro · 2020 – 2022</p>
+        </div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h4>Azure AI Engineer Associate (AI-102)</h4>
+          <p class="cert-meta">Microsoft</p>
+        </div>
+        <div class="cert-card">
+          <h4>Azure Data Engineer Associate (DP-203)</h4>
+          <p class="cert-meta">Microsoft</p>
+        </div>
+        <div class="cert-card">
+          <h4>Azure Data Scientist Associate (DP-100)</h4>
+          <p class="cert-meta">Microsoft</p>
+        </div>
+        <div class="cert-card">
+          <h4>Inglés B1</h4>
+          <p class="cert-meta">Examen Oxford</p>
+        </div>
+      </div>
+    </section>
+
     <section id="contacto" class="section">
+      <p class="eyebrow">CONTACT</p>
       <h2>Contacto</h2>
-      <p>[¿Quieres hablar conmigo? Contáctame por aquí:]</p>
+      <p>¿Quieres hablar conmigo? Contáctame por aquí:</p>
       <ul class="contact-links">
-        <li><a href="mailto:tu-email@ejemplo.com">Email</a></li>
-        <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:frailejaramarta@gmail.com">Email</a></li>
+        <li><a href="https://github.com/martafrailejara" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/marta-fraile-jara" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> [Tu nombre aquí]. Todos los derechos reservados.</p>
+    <p>&copy; <span id="year"></span> Marta Fraile Jara. Todos los derechos reservados.</p>
   </footer>
 
   <script src="js/main.js"></script>
